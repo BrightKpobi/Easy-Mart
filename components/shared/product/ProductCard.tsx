@@ -61,7 +61,7 @@ export default function ProductCard({ product }: ProductProps) {
                         {[...Array(5)].map((_, i) => (
                             <Star
                                 key={i}
-                                className={`w-3 h-3 ${i < Math.floor(product.rating) ? 'fill-[#FF8A00] text-[#FF8A00]' : 'fill-gray-200 text-gray-200'}`}
+                                className={`w-3 h-3 ${i < Math.floor(product.rating) ? 'fill-[#4cbe42] text-[#4cbe42]' : 'fill-gray-200 text-gray-200'}`}
                             />
                         ))}
                     </div>
@@ -76,7 +76,7 @@ export default function ProductCard({ product }: ProductProps) {
                     <Link href={`/products/${product.slug}`}>
                         <Button
                             variant="outline"
-                            className="rounded-full px-6 h-9 text-xs font-medium border-gray-200 hover:bg-emerald-600 hover:text-white hover:border-emerald-600 shadow-none transition-all"
+                            className="rounded-full px-6 h-9 text-xs font-medium border-gray-200 hover:bg-[#4cbe42] hover:text-white hover:border-[#4cbe42] shadow-none transition-all"
                         >
                             Buy now
                         </Button>
